@@ -1,4 +1,5 @@
-# main - compile the program if any source files have changed
+# all - compile the program if any source files have changed
+.PHONY: all
 all: Polygon.o Rectangle.o Triangle.o
 	g++ Polygon.o Rectangle.o Triangle.o main.cpp -o main
 
